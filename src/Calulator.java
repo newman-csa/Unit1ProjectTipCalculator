@@ -31,7 +31,10 @@ public class Calulator
         System.out.println("\n-- Your Total--");
         System.out.println("Total Tip: $"+ String.format("%.2f", totalTip));
         System.out.println("Total Bill + Tip: $"+ String.format("%.2f", totalBillTip));
-        System.out.println("Tip Per Person: $"+ String.format("%.2f", tipPerPerson));
-        System.out.println("Total Per Person (Bill + Tip): $"+ String.format("%.2f", totalPerPerson));
+        if (numberPeople > 1)
+        {
+            System.out.println("Tip Per Person: $"+ String.format("%.2f", tipPerPerson));
+            System.out.println("Total Per Person (Bill + Tip): $"+ String.format("%.2f", totalPerPerson));
+        }
     }
 }
